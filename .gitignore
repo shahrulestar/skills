@@ -1,0 +1,8 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Local skill installs (skills CLI)
+.agents/
+.claude/
+skills-lock.json
