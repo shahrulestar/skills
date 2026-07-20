@@ -2,7 +2,7 @@
 
 # skills
 
-**Agent skills for UX writing, conversion analytics, and A/B testing — built for coding agents by shahrulestar.com**
+**Agent skills for UX writing, conversion analytics, A/B testing, and Malaysia Waktu Solat API — built for coding agents by shahrulestar.com**
 
 [skills.sh](https://skills.sh/shahrulestar/skills) · [License: MIT](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## About
 
-A markdown-only collection of installable agent skills by [Shahrul Estar](https://github.com/shahrulestar). Each skill teaches coding agents (Cursor, Claude Code, Codex, Copilot, and [68+ more](https://github.com/vercel-labs/skills#supported-agents)) how to handle a specific product workflow — from UX copy audits to conversion tracking to A/B experiments.
+A markdown-only collection of installable agent skills by [Shahrul Estar](https://github.com/shahrulestar). Each skill teaches coding agents (Cursor, Claude Code, Codex, Copilot, and [68+ more](https://github.com/vercel-labs/skills#supported-agents)) how to handle a specific product workflow — from UX copy audits to conversion tracking to A/B experiments to Malaysia prayer-time API integration.
 
 This repo contains only `.md` skill files — no scripts, manifests, or tooling. Install with the [skills CLI](https://github.com/vercel-labs/skills).
 
@@ -23,6 +23,7 @@ This repo contains only `.md` skill files — no scripts, manifests, or tooling.
 | [ux-writer](https://skills.sh/shahrulestar/skills/ux-writer) | 1.3.1 | Audit and rewrite UI copy — headings, labels, buttons, microcopy, i18n, a11y | `Review all user-facing copy on the pricing page` |
 | [conversion-analytics](https://skills.sh/shahrulestar/skills/conversion-analytics) | 1.0.0 | Map funnels, design event taxonomy, wire tracking, verify events for experiments | `Set up conversion tracking for the signup flow with our existing Plausible setup` |
 | [ab-testing](https://skills.sh/shahrulestar/skills/ab-testing) | 1.1.0 | Design, implement, run, and analyze A/B tests on any agent-built project | `Should we A/B test the new hero headline? Check if we have enough traffic.` |
+| [waktusolat](https://skills.sh/shahrulestar/skills/waktusolat) | 1.0.0 | Correct base URL, endpoints, and JAKIM zone codes for the Malaysia Waktu Solat API | `Fetch July 2026 prayer times for Shah Alam using api.waktusolat.app` |
 
 ---
 
@@ -71,6 +72,16 @@ Should we A/B test the new hero headline on the landing page? Check if we have e
 We ran the pricing table test for two weeks — analyze results and tell me if we should ship variant B.
 ```
 
+### waktusolat
+
+```
+Fetch July 2026 prayer times for Shah Alam using the correct api.waktusolat.app endpoint and zone code.
+```
+
+```
+Resolve the JAKIM zone for lat 3.1390 long 101.6869, then call /v2/solat for that zone.
+```
+
 ---
 
 ## Install
@@ -84,6 +95,7 @@ npx skills add shahrulestar/skills --skill <skill-name>
 | ux-writer | `npx skills add shahrulestar/skills --skill ux-writer` |
 | conversion-analytics | `npx skills add shahrulestar/skills --skill conversion-analytics` |
 | ab-testing | `npx skills add shahrulestar/skills --skill ab-testing` |
+| waktusolat | `npx skills add shahrulestar/skills --skill waktusolat` |
 
 Install all skills in this bundle:
 
@@ -121,6 +133,7 @@ npx skills list
 npx skills update ux-writer
 npx skills update conversion-analytics
 npx skills update ab-testing
+npx skills update waktusolat
 npx skills check
 npx skills remove ux-writer
 ```
