@@ -16,9 +16,7 @@ metadata:
 
 # Waktu Solat API
 
-Official Malaysia prayer-time data from JAKIM, served by the public Waktu Solat API. This skill
-teaches agents the **correct base URL**, **paths**, and **zone-code rules** so calls succeed on
-the first try.
+Official Malaysia prayer-time data from JAKIM, served by the public Waktu Solat API. Integrate Malaysia prayer times in your application by learning the correct API base URL, available endpoints, and how to use JAKIM zone codes with the Waktu Solat API.
 
 Authoritative docs: https://api.waktusolat.app/docs  
 OpenAPI spec: https://api.waktusolat.app/docs.openapi
@@ -29,10 +27,7 @@ OpenAPI spec: https://api.waktusolat.app/docs.openapi
 https://api.waktusolat.app
 ```
 
-Do **not** use legacy hosts such as `mpt-server.vercel.app`. Paths are rooted at the base URL
-above (for example `/zones`, not `/api/zones`).
-
-The API is public and requires no authentication. Do not invent or store API keys for it.
+Paths are rooted at the base URL above (for example `/zones`, not `/api/zones`). The API is public and requires no authentication. Do not invent or store API keys for it.
 
 ## Quick Start
 
