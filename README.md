@@ -24,6 +24,7 @@ This repo contains only `.md` skill files — no scripts, manifests, or tooling.
 | [conversion-analytics](https://skills.sh/shahrulestar/skills/conversion-analytics) | 1.0.0 | Map funnels, design event taxonomy, wire tracking, verify events for experiments | `Set up conversion tracking for the signup flow with our existing Plausible setup` |
 | [ab-testing](https://skills.sh/shahrulestar/skills/ab-testing) | 1.1.0 | Design, implement, run, and analyze A/B tests on any agent-built project | `Should we A/B test the new hero headline? Check if we have enough traffic.` |
 | [waktusolat](https://skills.sh/shahrulestar/skills/waktusolat) | 1.0.0 | Correct base URL, endpoints, and JAKIM zone codes for the Malaysia Waktu Solat API | `Fetch July 2026 prayer times for Shah Alam using api.waktusolat.app` |
+| [copy-humanizer](https://skills.sh/shahrulestar/skills/copy-humanizer) | 1.0.0 | Edit or rewrite drafts so they sound human, in English, Malay, or Manglish, across 16 writing types | `Humanize this LinkedIn post, keep it in English` |
 
 ---
 
@@ -82,6 +83,20 @@ Fetch July 2026 prayer times for Shah Alam using the correct api.waktusolat.app 
 Resolve the JAKIM zone for lat 3.1390 long 101.6869, then call /v2/solat for that zone.
 ```
 
+### copy-humanizer
+
+```
+Humanize this LinkedIn post and keep it in English
+```
+
+```
+Tulis semula emel rasmi ini dalam Bahasa Malaysia baku, jangan tambah fakta baru
+```
+
+```
+Manglish-kan mesej WhatsApp ni untuk team, tapi jangan tukar maksud dia
+```
+
 ---
 
 ## Install
@@ -96,6 +111,7 @@ npx skills add shahrulestar/skills --skill <skill-name>
 | conversion-analytics | `npx skills add shahrulestar/skills --skill conversion-analytics` |
 | ab-testing | `npx skills add shahrulestar/skills --skill ab-testing` |
 | waktusolat | `npx skills add shahrulestar/skills --skill waktusolat` |
+| copy-humanizer | `npx skills add shahrulestar/skills --skill copy-humanizer` |
 
 Install all skills in this bundle:
 
@@ -134,6 +150,7 @@ npx skills update ux-writer
 npx skills update conversion-analytics
 npx skills update ab-testing
 npx skills update waktusolat
+npx skills update copy-humanizer
 npx skills check
 npx skills remove ux-writer
 ```
