@@ -2,7 +2,7 @@
 
 # skills
 
-**Agent skills for UX writing, conversion analytics, A/B testing, and Malaysia Waktu Solat API — built for coding agents by shahrulestar.com**
+**Agent skills for UX writing, copy humanizing, conversion analytics, A/B testing, Malaysia Waktu Solat API, and Malaysian flood monitoring — built for coding agents by shahrulestar.com**
 
 [skills.sh](https://skills.sh/shahrulestar/skills) · [License: MIT](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## About
 
-A markdown-only collection of installable agent skills by [Shahrul Estar](https://github.com/shahrulestar). Each skill teaches coding agents (Cursor, Claude Code, Codex, Copilot, and [68+ more](https://github.com/vercel-labs/skills#supported-agents)) how to handle a specific product workflow — from UX copy audits to conversion tracking to A/B experiments to Malaysia prayer-time API integration.
+A markdown-only collection of installable agent skills by [Shahrul Estar](https://github.com/shahrulestar). Each skill teaches coding agents (Cursor, Claude Code, Codex, Copilot, and [68+ more](https://github.com/vercel-labs/skills#supported-agents)) how to handle a specific product workflow — from UX copy audits to conversion tracking to A/B experiments to Malaysia prayer-time API integration and flood gauge watches.
 
 This repo contains only `.md` skill files — no scripts, manifests, or tooling. Install with the [skills CLI](https://github.com/vercel-labs/skills).
 
@@ -25,6 +25,7 @@ This repo contains only `.md` skill files — no scripts, manifests, or tooling.
 | [ab-testing](https://skills.sh/shahrulestar/skills/ab-testing) | 1.1.0 | Design, implement, run, and analyze A/B tests on any agent-built project | `Should we A/B test the new hero headline? Check if we have enough traffic.` |
 | [waktusolat](https://skills.sh/shahrulestar/skills/waktusolat) | 1.0.0 | Correct base URL, endpoints, and JAKIM zone codes for the Malaysia Waktu Solat API | `Fetch July 2026 prayer times for Shah Alam using api.waktusolat.app` |
 | [copy-humanizer](https://skills.sh/shahrulestar/skills/copy-humanizer) | 1.0.0 | Edit or rewrite drafts so they sound human, in English, Malay, or Manglish, across 16 writing types | `Humanize this LinkedIn post, keep it in English` |
+| [banjir](https://skills.sh/shahrulestar/skills/banjir) | 1.0.0 | Set up your agent as a flood monitor: watch official JPS and council river gauges, alert only when the water rises | `Set up a flood watch for Kuala Krai, Kelantan` |
 
 ---
 
@@ -97,6 +98,20 @@ Tulis semula emel rasmi ini dalam Bahasa Malaysia baku, jangan tambah fakta baru
 Manglish-kan mesej WhatsApp ni untuk team, tapi jangan tukar maksud dia
 ```
 
+### banjir
+
+```
+Set up a flood watch for Kuala Krai, Kelantan and only message me when it hits Alert
+```
+
+```
+What's the water level at the nearest JPS station to Kota Tinggi right now?
+```
+
+```
+Pantau paras air Sungai Pahang dekat Pekan, beritahu saya bila sampai tahap Waspada
+```
+
 ---
 
 ## Install
@@ -112,6 +127,7 @@ npx skills add shahrulestar/skills --skill <skill-name>
 | ab-testing | `npx skills add shahrulestar/skills --skill ab-testing` |
 | waktusolat | `npx skills add shahrulestar/skills --skill waktusolat` |
 | copy-humanizer | `npx skills add shahrulestar/skills --skill copy-humanizer` |
+| banjir | `npx skills add shahrulestar/skills --skill banjir` |
 
 Install all skills in this bundle:
 
@@ -151,6 +167,7 @@ npx skills update conversion-analytics
 npx skills update ab-testing
 npx skills update waktusolat
 npx skills update copy-humanizer
+npx skills update banjir
 npx skills check
 npx skills remove ux-writer
 ```
